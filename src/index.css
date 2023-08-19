@@ -1,13 +1,85 @@
+/* Apply a gradient background with a fixed image overlay */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #151933;
+  background: url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1664&q=80) no-repeat fixed;
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the username */
+.username {
+  color: #fff;
+  text-align: left;
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+/* Hide extra image in particles.js container */
+#tsparticles>canvas~img {
+  display: none !important;
+}
+
+/* Wrapper padding for content */
+.wrapper {
+  padding: 16px;
+}
+
+/* Styling for video cards */
+.videoCard {
+  padding-bottom: 4px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+/* Styling for "My" video card */
+.meCard {
+  background: #000000;
+  color: #ece8e8;
+  border: 1px solid #fff;
+}
+
+/* Styling for user's video card */
+.userCard {
+  
+  background: #5cc7ff;
+  color: #020202;
+  border: 1px solid #fff;
+
+}
+
+/* Reset padding for video card body */
+.videoCard > .ant-card-body {
+  padding: 0;
+}
+
+/* Responsive video width */
+video {
+  width: 100%;
+}
+
+/* Styling for the call button */
+.buttonCall {
+  background: #4eca57;
+  border: none;
+}
+
+/* Padding utility class */
+.padding16 {
+  padding: 16px;
+}
+
+
+/* Styling for modal content */
+.modalstyle .ant-modal-content {
+  background: rgb(3 3 3 / 80%);
+  color: #fff;
+  max-width: 300px;
+  margin: auto;
 }
