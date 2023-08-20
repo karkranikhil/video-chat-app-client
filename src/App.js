@@ -22,10 +22,10 @@ const App = () => {
             <Col>
               <h1 className='username'>Welcome, {name}</h1>
             </Col>
-            <Col>
+            <Col >
               {me && (
                 <CopyToClipboard text={me}>
-                  <Button type="outline" icon={<CopyOutlined />} size="large">My Id</Button>
+                  <Button type="outline" className="myIDButton" icon={<CopyOutlined />} size="large">My Id</Button>
                 </CopyToClipboard>
               )}
             </Col>

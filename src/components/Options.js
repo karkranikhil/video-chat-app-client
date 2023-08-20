@@ -27,6 +27,7 @@ const Options = () => {
             size="large"
             style={{ margin: 'auto' }}
             onClick={leaveCall}
+            className='hangButton'
           >
             Hang Up
           </Button></Col>

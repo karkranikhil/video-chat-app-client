@@ -1,3 +1,4 @@
+
 /* Apply a gradient background with a fixed image overlay */
 body {
   background: #151933;
@@ -82,4 +83,16 @@ video {
   color: #fff;
   max-width: 300px;
   margin: auto;
+}
+
+.myIDButton{
+  border-color: #d9d9d9;
+  background: #fff;
+}
+.hangButton{
+  color: #fff;
+  border-color: #ff4d4f;
+  background: #ff4d4f;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 0 rgba(0,0,0,.045);
 }
